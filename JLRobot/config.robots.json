@@ -1,0 +1,35 @@
+{
+  "instrument": "BNB/BTC",
+  "state": "train & trade",
+  "training_time": [
+    ["2022-04-18 18:30:00 +00:00", "2022-04-18 18:40:00 +00:00"],
+    ["2022-04-18 18:37:05 +00:00", "2022-04-18 18:39:05 +00:00"]
+  ],
+  "trading_time": [
+    ["2022-04-18 18:45:00 +00:00", "2022-04-18 18:55:00 +00:00"], 
+    ["2022-04-18 19:00:05 +00:00", "2022-04-18 19:10:05 +00:00"],
+    ["2022-04-18 19:30:05 +00:00", "2022-04-18 19:45:05 +00:00"]
+  ],
+  "prediction_horizon": {
+    "value": 30,
+    "units": "Seconds"
+  },
+  "price_tick_size": 0.01, 
+  "trade_history_length": {
+   "value": 50,
+   "units": "Seconds"
+  },
+ "training_rate": 0.6,
+ "epochs": 300,
+ "pnl_report_file": "pnl.json",
+ "balance": [{
+    "value":  1000,
+    "units": "BNB"
+  }],
+ "dump_path": "/home/azler/Downloads/binance/20220418182905.xz",
+  "export_model_file": "model.export.json",
+  "import_model_file": "model.import.json",
+  "max_ob_level": 30,
+  "quantiles": [0.25, 0.5, 0.75],
+  "quantile_relative_margins": [1, 1, 1]
+}
